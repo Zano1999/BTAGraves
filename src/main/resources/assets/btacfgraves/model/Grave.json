@@ -1,0 +1,56 @@
+{
+	"credit": "Made with Blockbench",
+	"textures": {
+		"1": "minecraft:block/cobbled_stone_mossy",
+		"particle": "minecraft:block/cobbled_stone_mossy"
+	},
+	"elements": [
+		{
+			"name": "texture_0",
+			"from": [2, 14, 8],
+			"to": [14, 15, 9],
+			"faces": {
+				"north": {"uv": [12, 0, 0, 1], "texture": "#1"},
+				"east": {"uv": [15, 0, 16, 1], "texture": "#1"},
+				"south": {"uv": [0, 0, 12, 1], "texture": "#1"},
+				"west": {"uv": [0, 0, 1, 1], "texture": "#1"},
+				"up": {"uv": [0, 0, 16, 1], "texture": "#1"},
+				"down": {"uv": [0, 15, 16, 16], "texture": "#1"}
+			}
+		},
+		{
+			"name": "texture_1",
+			"from": [1, 0, 8],
+			"to": [15, 14, 9],
+			"faces": {
+				"north": {"uv": [14, 0, 0, 14], "texture": "#1"},
+				"east": {"uv": [15, 0, 16, 14], "texture": "#1"},
+				"south": {"uv": [0, 0, 14, 14], "texture": "#1"},
+				"west": {"uv": [0, 0, 1, 14], "texture": "#1"},
+				"up": {"uv": [0, 0, 16, 1], "texture": "#1"},
+				"down": {"uv": [0, 15, 16, 16], "texture": "#1"}
+			}
+		},
+		{
+			"name": "texture_2",
+			"from": [3, 15, 8],
+			"to": [13, 16, 9],
+			"faces": {
+				"north": {"uv": [10, 0, 0, 1], "texture": "#1"},
+				"east": {"uv": [15, 0, 16, 1], "texture": "#1"},
+				"south": {"uv": [0, 0, 10, 1], "texture": "#1"},
+				"west": {"uv": [0, 0, 1, 1], "texture": "#1"},
+				"up": {"uv": [0, 0, 16, 1], "texture": "#1"},
+				"down": {"uv": [0, 15, 16, 16], "texture": "#1"}
+			}
+		}
+	],
+	"groups": [
+		{
+			"name": "texture",
+			"origin": [8, 8, 8],
+			"color": 0,
+			"children": [0, 1, 2]
+		}
+	]
+}

@@ -1,11 +1,17 @@
 {
     "required": true,
     "minVersion": "0.8",
-    "package": "turniplabs.examplemod.mixin",
+    "package": "citizenfoffie.btacfgraves.mixin",
     "compatibilityLevel": "JAVA_8",
     "mixins": [
+      "DeathMixin",
+      "Entity.MixinEntityPlayer",
+      "Entity.MixinTileEntityTrommel"
     ],
     "client": [
+      "Entity.MixinEntityPlayerSP"
+
+
     ],
     "injectors": {
         "defaultRequire": 1

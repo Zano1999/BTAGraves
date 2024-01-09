@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "id": "examplemod",
+  "id": "btacfgraves",
   "version": "${version}",
 
-  "name": "Example Mod",
-  "description": "This mod aims to help new BTA modders.",
+  "name": "Graves",
+  "description": "This mod adds graves that store a players items on death",
   "authors": [
-    "Turnip Labs"
+    "CitizenFoffie"
   ],
   "contact": {
     "homepage": "",
@@ -18,11 +18,15 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-        "turniplabs.examplemod.ExampleMod"
-    ]
+        "citizenfoffie.btacfgraves.BTAGraves"
+    ],
+		"afterGameStart": [
+			"citizenfoffie.btacfgraves.BTAGraves"
+
+		]
   },
   "mixins": [
-      "examplemod.mixins.json"
+      "btacfgraves.mixins.json"
   ],
 
   "depends": {
