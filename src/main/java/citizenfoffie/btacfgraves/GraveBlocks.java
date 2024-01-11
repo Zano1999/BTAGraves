@@ -16,10 +16,6 @@ import static citizenfoffie.btacfgraves.BTAGraves.config;
 
 public class GraveBlocks implements ModInitializer {
 	public static final Block grave = new BlockBuilder(MOD_ID)
-			.setSideTextures("steelchestfront.png")
-			.setNorthTexture("steelchestfront.png")
-			.setTopTexture("steelchestfront.png")
-			.setBottomTexture("steelchestfront.png")
 			.setBlockSound(BlockSounds.STONE)
 			.setHardness(2.5f)
 			.setTags(BlockTags.MINEABLE_BY_PICKAXE)
