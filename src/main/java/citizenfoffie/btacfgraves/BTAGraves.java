@@ -6,6 +6,7 @@ import net.minecraft.client.sound.block.BlockSounds;
 import net.minecraft.core.block.Block;
 import net.minecraft.core.block.material.Material;
 import net.minecraft.core.block.tag.BlockTags;
+import net.minecraft.server.net.handler.NetServerHandler;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import turniplabs.halplibe.helper.BlockBuilder;
@@ -41,5 +42,8 @@ public class BTAGraves implements GameStartEntrypoint {
 	@Override
 	public void afterGameStart() {
 		EntityHelper.Core.createTileEntity(TitleEntityGraveChest.class, "Grave");
+	}
+	public static void logNetwork(String message){ // Might fix some weird class missing crash
+		NetServerHandler.logger.info(message);
 	}
 }

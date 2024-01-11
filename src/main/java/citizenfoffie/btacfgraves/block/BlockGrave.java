@@ -69,7 +69,7 @@ public class BlockGrave extends BlockTileEntityRotatable {
 		return false;
 	}
 	public void displayGui(EntityPlayer player, IInventory inventory){
-		((IEntityPlayer)player).BTAGraves$displayGUIIronChest(inventory);
+		((IEntityPlayer)player).BTAGraves$displayGUIGrave(inventory);
 	}
 
 
