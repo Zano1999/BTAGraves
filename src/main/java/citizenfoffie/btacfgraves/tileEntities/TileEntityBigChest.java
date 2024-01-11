@@ -68,7 +68,7 @@ import net.minecraft.core.player.inventory.InventorySorter;
 			for(int i = 0; i < nbttaglist.tagCount(); ++i) {
 				CompoundTag nbttagcompound1 = (CompoundTag)nbttaglist.tagAt(i);
 				int j = nbttagcompound1.getByte("Slot") & 255;
-				if (j >= 0 && j < this.contents.length) {
+				if (j < this.contents.length) {
 					this.contents[j] = ItemStack.readItemStackFromNbt(nbttagcompound1);
 				}
 			}

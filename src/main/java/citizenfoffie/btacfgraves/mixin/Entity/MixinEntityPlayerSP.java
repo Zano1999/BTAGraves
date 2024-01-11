@@ -17,12 +17,12 @@ public class MixinEntityPlayerSP implements IEntityPlayer {
 	private final EntityPlayerSP thisAs = (EntityPlayerSP)(Object)this;
 	@Shadow
 	protected Minecraft mc;
-	public void displayGUIIronChest(IInventory iinventory) {
+	public void BTAGraves$displayGUIIronChest(IInventory iinventory) {
 		this.mc.displayGuiScreen(new GuiGraveChest(thisAs.inventory, iinventory));
 	}
 
 	@Override
-	public void displayGUIDiamondChest(IInventory iinventory) {
+	public void BTAGraves$displayGUIDiamondChest(IInventory iinventory) {
 
 	}
 
