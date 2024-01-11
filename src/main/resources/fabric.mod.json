@@ -17,7 +17,7 @@
 
   "environment": "*",
   "entrypoints": {
-    "main": [
+    "beforeGameStart": [
         "citizenfoffie.btacfgraves.BTAGraves"
     ],
 		"afterGameStart": [

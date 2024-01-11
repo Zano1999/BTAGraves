@@ -6,9 +6,9 @@ import net.minecraft.core.player.inventory.IInventory;
 import org.lwjgl.opengl.GL11;
 
 public class GuiGraveChest extends GuiContainer {
-	private IInventory upperChestInventory;
-	private IInventory lowerChestInventory;
-	private int inventoryRows;
+	private final IInventory upperChestInventory;
+	private final IInventory lowerChestInventory;
+	private final int inventoryRows;
 
 	public GuiGraveChest(IInventory iinventory, IInventory iinventory1) {
 		super(new ContainerChest(iinventory, iinventory1));
@@ -38,7 +38,7 @@ public class GuiGraveChest extends GuiContainer {
 		this.drawTexturedModalRect(x, y, 0, 0, this.xSize, h1);
 		int rows = this.inventoryRows;
 		while (rows > 6) {
-			int h2 = Math.min(rows, 6) * 18;
+			int h2 = 6 * 18;
 			this.drawTexturedModalRect(x, y + h1, 0, 17, this.xSize, h2);
 			rows -= 6;
 			h1 += h2;

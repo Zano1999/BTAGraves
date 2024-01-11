@@ -3,7 +3,6 @@ package citizenfoffie.btacfgraves.block;
 import citizenfoffie.btacfgraves.MixinInterfaces.IEntityPlayer;
 import citizenfoffie.btacfgraves.tileEntities.TileEntityBigChest;
 import citizenfoffie.btacfgraves.tileEntities.TitleEntityGraveChest;
-import net.minecraft.core.block.BlockTileEntity;
 import net.minecraft.core.block.BlockTileEntityRotatable;
 import net.minecraft.core.block.entity.TileEntity;
 import net.minecraft.core.block.material.Material;
@@ -70,7 +69,7 @@ public class BlockGrave extends BlockTileEntityRotatable {
 		return false;
 	}
 	public void displayGui(EntityPlayer player, IInventory inventory){
-		((IEntityPlayer)player).displayGUIIronChest(inventory);
+		((IEntityPlayer)player).BTAGraves$displayGUIGrave(inventory);
 	}
 
 
