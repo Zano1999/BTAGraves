@@ -26,8 +26,8 @@ abstract class DeathMixin extends EntityLiving {
 
 	@Inject(method = "onDeath", at = @At("HEAD"),remap = false)
 	private void onDeath(Entity deathEntity, CallbackInfo ci) {
-		world.setBlockWithNotify((int) (x-1), (int) (y-1), (int) z, BTAGraves.grave.id); // Place Grave
-		TitleEntityGraveChest tileEntityChest = (TitleEntityGraveChest)world.getBlockTileEntity((int) (x-1), (int) (y-1), (int) z);
+		world.setBlockWithNotify((int) (x), (int) (y), (int) z, BTAGraves.grave.id); // Place Grave
+		TitleEntityGraveChest tileEntityChest = (TitleEntityGraveChest)world.getBlockTileEntity((int) (x), (int) (y), (int) z);
 		BTAGraves.LOGGER.info(Integer.toString(this.inventory.getSizeInventory()));
 
 		for(int i = 0; i < 36; ++i) {
