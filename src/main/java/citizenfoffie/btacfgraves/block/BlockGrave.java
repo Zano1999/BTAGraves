@@ -19,6 +19,7 @@ public class BlockGrave extends BlockTileEntityRotatable {
 	Random random = new Random();
 	public BlockGrave(String key, int id, Material material) {
 		super(key, id, material);
+		this.setBlockBounds(0.0f, 0.0F, 0.3125f, 1.0f, 1.0f, 0.6875f);
 	}
 	public void onBlockAdded(World world, int x, int y, int z) {
 		super.onBlockAdded(world, x, y, z);
